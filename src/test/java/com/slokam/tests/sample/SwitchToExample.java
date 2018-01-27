@@ -12,8 +12,6 @@ import org.openqa.selenium.firefox.FirefoxDriver;
 import org.openqa.selenium.interactions.Actions;
 
 public class SwitchToExample {
-
-	
 	
 	public void test1() {
 		System.setProperty("webdriver.gecko.driver", "D:\\selenium_classes\\jars\\geckodriver.exe");
@@ -78,8 +76,6 @@ public class SwitchToExample {
 			 String  st  = it.next();
 			 System.out.println(st);
 		 }
-		 
-		 
 	}
 	
 	public static void main(String[] args) {
