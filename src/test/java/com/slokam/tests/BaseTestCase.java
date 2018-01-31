@@ -56,7 +56,6 @@ public abstract class BaseTestCase extends CommonBaseTestCase {
 		//BaseState.login();
 		presetup();
 	}
-System.out.println("");
 	
 	/**
 	 * After test clean up
