@@ -60,6 +60,12 @@ Using Testng :
 			
 			1000
 			
+	testng.xml
+		declarative
+	
+	
+	
+	
 	
 Git Notes :
 
