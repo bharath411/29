@@ -37,6 +37,22 @@ public class AdminProductsPage extends BasePage {
 
 	@FindBy(xpath = "//input[@id='input-model']")
 	public WebElement modelEle;
+	
+	@FindBy(xpath = "//a[text()='Image']")
+	public WebElement imageEle;
+	
+	@FindBy(xpath = "//button[@data-original-title='Add Image']")
+	public WebElement addImageEle;
+	
+	@FindBy(xpath = "//img[@src='https://localhost:443/opencart/image/cache/no_image-100x100.png']")
+	public WebElement addImageEle1;
+	
+	@FindBy(xpath = "//button[@id='button-image']")
+	public WebElement addImageEle2;
+	
+	@FindBy(xpath = "//button[@data-original-title='Upload']")
+	public WebElement uploadImageEle;
+	
 
 	@FindBy(xpath = "//a[@data-original-title='Add New']")
 	public WebElement addNewProductButton;
@@ -52,6 +68,16 @@ public class AdminProductsPage extends BasePage {
 
 	public String getAlertMessage() {
 		return alertMessage.getText().trim();
+	}
+    
+	public void uploadProductImage() {
+		imageEle.click();
+		addImageEle.click();
+		addImageEle1.click();
+		addImageEle2.click();
+		uploadImageEle.click();
+		
+		
 	}
 
 	public void addProduct(ProductDTO dto) {
