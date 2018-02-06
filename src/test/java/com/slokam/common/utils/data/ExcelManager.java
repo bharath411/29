@@ -62,7 +62,7 @@ public class ExcelManager {
 		Row row = sheet.getRow(1);
 		Cell cell = null;
 
-		for (int i = 0; i < 5; i++) {
+		for (int i = 0; i < 6; i++) {
 			cell = row.getCell(i);
 			String value = getData(cell);
 			System.out.println(value);
@@ -78,7 +78,8 @@ public class ExcelManager {
 		dto.setProductName(getData(row.getCell(1)));
 		dto.setDescription(getData(row.getCell(2)));
 		dto.setMetaTagTitle(getData(row.getCell(3)));
-		dto.setModel(getData(row.getCell(4)));
+		dto.setProductTags(getData(row.getCell(4)));
+		dto.setModel(getData(row.getCell(5)));
 		System.out.println(dto);
 		return dto;
 	}

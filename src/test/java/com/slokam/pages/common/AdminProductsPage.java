@@ -28,6 +28,9 @@ public class AdminProductsPage extends BasePage {
 
 	@FindBy(xpath = "//input[@id='input-meta-title1']")
 	public WebElement metaTagTitleEle;
+	
+	@FindBy(xpath = "//input[@id='input-tag1']")
+	public WebElement productTagsEle;
 
 	@FindBy(xpath = "//a[text()='Data']")
 	public WebElement dataEle;
@@ -56,6 +59,7 @@ public class AdminProductsPage extends BasePage {
 		productNameEle.sendKeys(dto.getProductName());
 		descriptionEle.sendKeys(dto.getDescription());
 		metaTagTitleEle.sendKeys(dto.getMetaTagTitle());
+		productTagsEle.sendKeys(dto.getProductTags());
 		dataEle.click();
 		modelEle.sendKeys(dto.getModel());
 		productSaveButton.click();

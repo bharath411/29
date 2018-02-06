@@ -5,6 +5,7 @@ public class ProductDTO {
 	private String productName;
 	private String description;
 	private String metaTagTitle;
+	private String productTags;
 	private String model;
 
 	public String getProductName() {
@@ -23,6 +24,14 @@ public class ProductDTO {
 		this.description = description;
 	}
 
+	public String getProductTags() {
+		return productTags;
+	}
+
+	public void setProductTags(String productTags) {
+		this.productTags = productTags;
+	}
+
 	public String getMetaTagTitle() {
 		return metaTagTitle;
 	}
@@ -30,7 +39,7 @@ public class ProductDTO {
 	public void setMetaTagTitle(String metaTagTitle) {
 		this.metaTagTitle = metaTagTitle;
 	}
-
+	
 	public String getModel() {
 		return model;
 	}
@@ -40,6 +49,6 @@ public class ProductDTO {
 	}
 
 	public String toString() {
-		return " ProductName : " + productName + ", Description : " +description + ", MetaTagTitle :" + metaTagTitle + ", Model : " + model ;
+		return " ProductName : " + productName + ", Description : " +description + ", MetaTagTitle :" + metaTagTitle + ", Model : " + model+",ProductTags:"+productTags ;
 	}
 }
