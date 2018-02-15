@@ -16,16 +16,17 @@ public class ApplicationProductPage extends BasePage {
 	@FindBy(xpath = "//button[@class='btn btn-default btn-lg']")
 	public WebElement searchButtonEle;	
 	
-	@FindBy(xpath = "//img[@src='https://localhost:443/opencart/image/cache/placeholder-228x228.png']")
+	@FindBy(xpath = "//div[@class='product-thumb']/div/a")
 	public WebElement firstProductEle;
 	
 	@FindBy(xpath = "//div[@class='col-sm-4']//ul[2]//li[1]")
 	public WebElement priceEle;
 	
 		
-	public void searchProduct() {
-		searchBoxEle.sendKeys("Nike");
+	public void searchProduct(String productName) {
+		searchBoxEle.sendKeys(productName);
 		searchButtonEle.click();
+		//m_driver.findElement(By.xpath("//img[@alt='"+productName+"']")).click();
 		firstProductEle.click();
 		
 	}

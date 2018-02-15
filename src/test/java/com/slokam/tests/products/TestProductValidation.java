@@ -71,7 +71,7 @@ public class TestProductValidation extends BaseTestCase{
 		ApplicationProductPage applicationProductPage = new ApplicationProductPage();
 		PageFactory.initElements(m_driver, applicationProductPage);
 		logger.info("7.search for the added product");
-		applicationProductPage.searchProduct();
+		applicationProductPage.searchProduct(productName);
 		
 		String actualPrice = applicationProductPage.getPrice();
 		logger.debug("Actual Price : " + actualPrice);
