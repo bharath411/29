@@ -53,12 +53,14 @@ public class TestAddNewProduct  extends BaseTestCase {
 		 String metaTagTitle = "T_"+ AutomationUtils.getInputString(5);
 		 String model = "M_"+ AutomationUtils.getInputString(5);
 		 
+		 
 		 ProductDTO dto = new ProductDTO();
 		 
 		 dto.setProductName(productName);
 		 dto.setDescription(description);
 		 dto.setMetaTagTitle(metaTagTitle);
 		 dto.setModel(model);
+		 
 		 
 		 adminProductsPage.addProduct(dto);
 		String actualMessage =  adminProductsPage.getAlertMessage();

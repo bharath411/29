@@ -311,6 +311,14 @@ public class ApplicationProperties {
     public String getAppUrl() {
         return m_app_url;
     }
+    
+    public String getAppUser() {
+        return m_app_username;
+    }
+
+    public String getAppPass() {
+        return m_app_password;
+    }
 
     public String getAdminUser() {
         return m_admin_username;
@@ -363,4 +371,6 @@ public class ApplicationProperties {
 		
 		return m_admin_url;
 	}
+
+	
 }

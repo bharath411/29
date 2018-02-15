@@ -7,6 +7,7 @@ public class ProductDTO {
 	private String metaTagTitle;
 	private String productTags;
 	private String model;
+	private String price;
 
 	public String getProductName() {
 		return productName;
@@ -47,8 +48,19 @@ public class ProductDTO {
 	public void setModel(String model) {
 		this.model = model;
 	}
+	
+	public String getPrice() {
+		
+		return price;
+	}
+	public void setPrice(String price) {
+		
+		this.price = price;
+	}
 
 	public String toString() {
-		return " ProductName : " + productName + ", Description : " +description + ", MetaTagTitle :" + metaTagTitle + ", Model : " + model+",ProductTags:"+productTags ;
+		return " ProductName : " + productName + ", Description : " +description + ", MetaTagTitle :" + metaTagTitle + ", Model : " + model+",ProductTags:"+productTags+",Price:"+price ;
 	}
+
+	
 }

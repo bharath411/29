@@ -34,6 +34,12 @@ public class AdminProductsPage extends BasePage {
 
 	@FindBy(xpath = "//a[text()='Data']")
 	public WebElement dataEle;
+	
+	@FindBy(xpath="//input[@id='input-price']")
+	public WebElement priceEle;
+	
+	@FindBy(xpath="//input[@id='input-quantity']")
+	public WebElement quantityEle;
 
 	@FindBy(xpath = "//input[@id='input-model']")
 	public WebElement modelEle;
@@ -88,6 +94,7 @@ public class AdminProductsPage extends BasePage {
 		productTagsEle.sendKeys(dto.getProductTags());
 		dataEle.click();
 		modelEle.sendKeys(dto.getModel());
+		priceEle.sendKeys(dto.getPrice());
 		productSaveButton.click();
 	}
 }
