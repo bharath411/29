@@ -1,0 +1,9 @@
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">	
+
+<suite name="Gmail Suite">
+   <test name="RunTests" parallel="methods" thread-count="15">
+       <classes>
+			<class name="com.slokam.tests.sample.GridTest3"/>
+       </classes> 
+    </test>    
+</suite>
